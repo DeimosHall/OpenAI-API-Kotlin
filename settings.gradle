@@ -14,4 +14,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "OpenAI API Kotlin"
 include ':app'
-include ':OpenAI API'
+include ':library'
