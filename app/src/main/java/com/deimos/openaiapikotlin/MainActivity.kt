@@ -16,8 +16,8 @@ class MainActivity : AppCompatActivity() {
         val API_KEY = "Bearer $MY_API_KEY"
         val openAI = OpenAI(API_KEY)
         var prompt = "The following is a conversation with an AI assistant. The assistant is helpful, creative, clever, and very friendly."
-        val question = "How are you?"
-        prompt += "\n\nHuman: $question \nAI:" // This is to maintain the context in the conversation
+        val question = "What is your name?"
+        prompt += "\n\nHuman: $question \nAI:" // This is to hold the context in the conversation
 
         CoroutineScope(Dispatchers.IO).launch {
             try {

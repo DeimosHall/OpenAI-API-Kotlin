@@ -5,8 +5,6 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 class OpenAI(val apiKey: String) {
-    private val contentType = "application/json"
-
     private val retrofit = Retrofit.Builder()
         .baseUrl("https://api.openai.com/v1/")
         .addConverterFactory(GsonConverterFactory.create())
